@@ -1,0 +1,16 @@
+service: estateinvestmentbot
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  profile: estateinvestmentbot
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
+
+functions:
+  graphql:
+    handler: graphql.handler
+    events:
+      - http: ANY graphql
