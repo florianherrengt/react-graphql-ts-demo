@@ -1,44 +1,47 @@
 // import { Property } from '../components/Property';
 
 import { Query } from "react-apollo";
-import * as React from 'react';
-import query from '../queries/Property';
-import {Properties} from 'ApiTypes/Properties';
-import {Property} from '../components/Property';
+import * as React from "react";
+import query from "../queries/Property";
+import { Properties } from "api-types/Properties";
+import { Property } from "../components/Property";
 
-
-interface Variables {}; // for future use
+interface Variables {} // for future use
 
 class PropertiesQuery extends Query<Properties, Variables> {}
 
 const PropertiesList = () => (
-    <PropertiesQuery query={query}>
-        {
-            ({ loading, error, data }) => {
-                if (error) {
-                    return <div>Error</div>;
-                }
-                if (loading || !data || !data.properties) {
-                    return <div>Loading</div>;
-                }
-                return (<div>{data.properties.map(p => p && <Property property={p} actions={actions} />)}</div>)
-            }
-        }
-    </PropertiesQuery>
-)
+  <PropertiesQuery query={query}>
+    {({ loading, error, data }) => {
+      if (error) {
+        return <div>Error</div>;
+      }
+      if (loading || !data || !data.properties) {
+        return <div>Loading</div>;
+      }
+      return (
+        <div>
+          {data.properties.map(
+            p => p && <Property property={p} actions={actions} />
+          )}
+        </div>
+      );
+    }}
+  </PropertiesQuery>
+);
 
 const onSavedCliked = (id: string) => {
-    console.log(id);
-}
+  console.log(id);
+};
 
 const onNotInterestedCliked = (id: string) => {
-    console.log(id);
-}
+  console.log(id);
+};
 
 const onLinkClicked = (link: string) => {
-    window.open(link, '_blank');
-}
+  window.open(link, "_blank");
+};
 
-const actions = {onSavedCliked, onLinkClicked, onNotInterestedCliked};
+const actions = { onSavedCliked, onLinkClicked, onNotInterestedCliked };
 
-export {PropertiesList};
+export { PropertiesList };

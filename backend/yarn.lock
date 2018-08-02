@@ -371,6 +371,9 @@ any-observable@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/any-observable/-/any-observable-0.3.0.tgz#af933475e5806a67d0d7df090dd5e8bef65d119b"
 
+api-types@../types:
+  version "1.0.0"
+
 apollo-cache-control@0.2.0-rc.3:
   version "0.2.0-rc.3"
   resolved "https://registry.yarnpkg.com/apollo-cache-control/-/apollo-cache-control-0.2.0-rc.3.tgz#30ae79cc8d4b0dd7bcd7f4a48eb285e9427ba47a"

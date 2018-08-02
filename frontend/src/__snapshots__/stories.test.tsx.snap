@@ -1,0 +1,433 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Property with saved 1`] = `
+<div>
+  <div>
+    <div
+      className="MuiPaper-root-109 MuiPaper-elevation1-112 MuiPaper-rounded-110 MuiCard-root-108 Component-card-104"
+    >
+      <div
+        className="MuiCardMedia-root-136 Component-cover-105"
+        src={undefined}
+        style={
+          Object {
+            "backgroundImage": "url(\\"https://www.rightmove.co.uk/news/wp-content/uploads/2018/07/Oak-Lane-Sevenoaks-Kent-image-1-768x512.jpg\\")",
+          }
+        }
+        title="Contemplative Reptile"
+      />
+      <div
+        className="Component-details-106"
+      >
+        <div
+          className="MuiCardContent-root-138"
+        >
+          <h2
+            className="MuiTypography-root-139 MuiTypography-headline-144 MuiTypography-gutterBottom-156"
+          >
+            Canary Wharf, London
+             
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pound-sign fa-w-10 "
+              data-icon="pound-sign"
+              data-prefix="fas"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 320 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M308 352h-45.495c-6.627 0-12 5.373-12 12v50.848H128V288h84c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-84v-63.556c0-32.266 24.562-57.086 61.792-57.086 23.658 0 45.878 11.505 57.652 18.849 5.151 3.213 11.888 2.051 15.688-2.685l28.493-35.513c4.233-5.276 3.279-13.005-2.119-17.081C273.124 54.56 236.576 32 187.931 32 106.026 32 48 84.742 48 157.961V224H20c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h28v128H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h296c6.627 0 12-5.373 12-12V364c0-6.627-5.373-12-12-12z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            500,000
+             
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-bed fa-w-20 "
+              data-icon="bed"
+              data-prefix="fas"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 640 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+             
+            4
+             
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-money-bill fa-w-20 "
+              data-icon="money-bill"
+              data-prefix="fas"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 640 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zM48 400v-64c35.35 0 64 28.65 64 64H48zm0-224v-64h64c0 35.35-28.65 64-64 64zm272 176c-44.19 0-80-42.99-80-96 0-53.02 35.82-96 80-96s80 42.98 80 96c0 53.03-35.83 96-80 96zm272 48h-64c0-35.35 28.65-64 64-64v64zm0-224c-35.35 0-64-28.65-64-64h64v64z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+             
+            17.2
+            %
+          </h2>
+          <div
+            className="MuiTypography-root-139 MuiTypography-body1-148"
+          >
+            <div
+              className="MuiChip-root-164 Component-keyword-107"
+              onClick={undefined}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={-1}
+            >
+              <span
+                className="MuiChip-label-169"
+              >
+                24 Hour concierge
+              </span>
+            </div>
+            <div
+              className="MuiChip-root-164 Component-keyword-107"
+              onClick={undefined}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={-1}
+            >
+              <span
+                className="MuiChip-label-169"
+              >
+                west facing
+              </span>
+            </div>
+            <div
+              className="MuiChip-root-164 Component-keyword-107"
+              onClick={undefined}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={-1}
+            >
+              <span
+                className="MuiChip-label-169"
+              >
+                sixth floor
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiCardActions-root-171"
+        >
+          <button
+            className="MuiButtonBase-root-197 MuiButton-root-173 MuiButton-contained-182 MuiButton-containedPrimary-183 MuiButton-raised-185 MuiButton-raisedPrimary-186 MuiButton-sizeSmall-194 MuiCardActions-action-172"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-174"
+            >
+              Saved
+            </span>
+            <span
+              className="MuiTouchRipple-root-200"
+            />
+          </button>
+          <button
+            className="MuiButtonBase-root-197 MuiButton-root-173 MuiButton-text-175 MuiButton-textPrimary-176 MuiButton-flat-178 MuiButton-flatPrimary-179 MuiButton-sizeSmall-194 MuiCardActions-action-172"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-174"
+            >
+              Link
+            </span>
+            <span
+              className="MuiTouchRipple-root-200"
+            />
+          </button>
+          <button
+            className="MuiButtonBase-root-197 MuiButton-root-173 MuiButton-text-175 MuiButton-textSecondary-177 MuiButton-flat-178 MuiButton-flatSecondary-180 MuiButton-sizeSmall-194 MuiCardActions-action-172"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-174"
+            >
+              Not interested
+            </span>
+            <span
+              className="MuiTouchRipple-root-200"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Property with title and price 1`] = `
+<div>
+  <div>
+    <div
+      className="MuiPaper-root-6 MuiPaper-elevation1-9 MuiPaper-rounded-7 MuiCard-root-5 Component-card-1"
+    >
+      <div
+        className="MuiCardMedia-root-33 Component-cover-2"
+        src={undefined}
+        style={
+          Object {
+            "backgroundImage": "url(\\"https://www.rightmove.co.uk/news/wp-content/uploads/2018/07/Oak-Lane-Sevenoaks-Kent-image-1-768x512.jpg\\")",
+          }
+        }
+        title="Contemplative Reptile"
+      />
+      <div
+        className="Component-details-3"
+      >
+        <div
+          className="MuiCardContent-root-35"
+        >
+          <h2
+            className="MuiTypography-root-36 MuiTypography-headline-41 MuiTypography-gutterBottom-53"
+          >
+            Canary Wharf, London
+             
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pound-sign fa-w-10 "
+              data-icon="pound-sign"
+              data-prefix="fas"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 320 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M308 352h-45.495c-6.627 0-12 5.373-12 12v50.848H128V288h84c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-84v-63.556c0-32.266 24.562-57.086 61.792-57.086 23.658 0 45.878 11.505 57.652 18.849 5.151 3.213 11.888 2.051 15.688-2.685l28.493-35.513c4.233-5.276 3.279-13.005-2.119-17.081C273.124 54.56 236.576 32 187.931 32 106.026 32 48 84.742 48 157.961V224H20c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h28v128H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h296c6.627 0 12-5.373 12-12V364c0-6.627-5.373-12-12-12z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            500,000
+             
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-bed fa-w-20 "
+              data-icon="bed"
+              data-prefix="fas"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 640 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+             
+            4
+             
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-money-bill fa-w-20 "
+              data-icon="money-bill"
+              data-prefix="fas"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 640 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zM48 400v-64c35.35 0 64 28.65 64 64H48zm0-224v-64h64c0 35.35-28.65 64-64 64zm272 176c-44.19 0-80-42.99-80-96 0-53.02 35.82-96 80-96s80 42.98 80 96c0 53.03-35.83 96-80 96zm272 48h-64c0-35.35 28.65-64 64-64v64zm0-224c-35.35 0-64-28.65-64-64h64v64z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+             
+            17.2
+            %
+          </h2>
+          <div
+            className="MuiTypography-root-36 MuiTypography-body1-45"
+          >
+            <div
+              className="MuiChip-root-61 Component-keyword-4"
+              onClick={undefined}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={-1}
+            >
+              <span
+                className="MuiChip-label-66"
+              >
+                24 Hour concierge
+              </span>
+            </div>
+            <div
+              className="MuiChip-root-61 Component-keyword-4"
+              onClick={undefined}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={-1}
+            >
+              <span
+                className="MuiChip-label-66"
+              >
+                west facing
+              </span>
+            </div>
+            <div
+              className="MuiChip-root-61 Component-keyword-4"
+              onClick={undefined}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={-1}
+            >
+              <span
+                className="MuiChip-label-66"
+              >
+                sixth floor
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiCardActions-root-68"
+        >
+          <button
+            className="MuiButtonBase-root-94 MuiButton-root-70 MuiButton-text-72 MuiButton-textPrimary-73 MuiButton-flat-75 MuiButton-flatPrimary-76 MuiButton-sizeSmall-91 MuiCardActions-action-69"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-71"
+            >
+              Save
+            </span>
+            <span
+              className="MuiTouchRipple-root-97"
+            />
+          </button>
+          <button
+            className="MuiButtonBase-root-94 MuiButton-root-70 MuiButton-text-72 MuiButton-textPrimary-73 MuiButton-flat-75 MuiButton-flatPrimary-76 MuiButton-sizeSmall-91 MuiCardActions-action-69"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-71"
+            >
+              Link
+            </span>
+            <span
+              className="MuiTouchRipple-root-97"
+            />
+          </button>
+          <button
+            className="MuiButtonBase-root-94 MuiButton-root-70 MuiButton-text-72 MuiButton-textSecondary-74 MuiButton-flat-75 MuiButton-flatSecondary-77 MuiButton-sizeSmall-91 MuiCardActions-action-69"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-71"
+            >
+              Not interested
+            </span>
+            <span
+              className="MuiTouchRipple-root-97"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

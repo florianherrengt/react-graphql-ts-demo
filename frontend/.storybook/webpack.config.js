@@ -10,6 +10,7 @@ module.exports = (baseConfig, env, defaultConfig) => {
     loader: require.resolve("ts-loader")
   });
   defaultConfig.resolve.extensions.push(".ts", ".tsx");
+  defaultConfig.resolve.symlinks = false;
 
   return defaultConfig;
 };

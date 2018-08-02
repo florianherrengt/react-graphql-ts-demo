@@ -13,7 +13,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Chip from "@material-ui/core/Chip";
 import { createStyles, withStyles, WithStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import {Properties_properties} from 'ApiTypes/Properties'
+import { Properties_properties } from "api-types/Properties";
 
 const styles = createStyles({
   card: {
@@ -36,75 +36,68 @@ export interface PropretyProps extends WithStyles<typeof styles> {
     onLinkClicked(link: string): void;
     onSavedCliked(id: string): void;
     onNotInterestedCliked(id: string): void;
-  }
+  };
 }
 
-const Property = withStyles(styles)(
-  (props: PropretyProps) => {
-    const onLinkClicked = () => props.actions.onLinkClicked(props.property.link)
-    const onSavedCliked = () => props.actions.onSavedCliked(props.property.id)
-    const onNotInterestedCliked = () => props.actions.onNotInterestedCliked(props.property.id)
+const Property = withStyles(styles)((props: PropretyProps) => {
+  const onLinkClicked = () => props.actions.onLinkClicked(props.property.link);
+  const onSavedCliked = () => props.actions.onSavedCliked(props.property.id);
+  const onNotInterestedCliked = () =>
+    props.actions.onNotInterestedCliked(props.property.id);
 
-    if (props.property.notInterested) {
-      return <div />
-    }
-
-    return (
-      <div>
-        <div>
-          <Card className={props.classes.card}>
-            <CardMedia
-              className={props.classes.cover}
-              image={props.property.image}
-              title="Contemplative Reptile"
-            />
-            <div className={props.classes.details}>
-              <CardContent>
-                <Typography
-                  gutterBottom={true}
-                  variant="headline"
-                  component="h2"
-                >
-                  {props.property.title} <FontAwesomeIcon icon={faPoundSign} />
-                  {props.property.price.toLocaleString()} <FontAwesomeIcon icon={faBed} />{" "}
-                  {props.property.bed} <FontAwesomeIcon icon={faMoneyBill} /> {props.property.roi}%
-                </Typography>
-                <Typography component="div">
-                  {props.property.keywords.map((k, i) => (
-                    <Chip className={props.classes.keyword} key={i} label={k} />
-                  ))}
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button
-                  size="small"
-                  color="primary"
-                  variant={props.property.saved ? 'contained' : 'flat'}
-                  onClick={onSavedCliked}>
-                  {props.property.saved ? 'Saved' : 'Save'}
-                </Button>
-                <Button
-                  size="small"
-                  color="primary"
-                  onClick={onLinkClicked}
-                >
-                  Link
-                </Button>
-                <Button
-                  size="small"
-                  color="secondary"
-                  onClick={onNotInterestedCliked}
-                >
-                  Not interested
-                </Button>
-              </CardActions>
-            </div>
-          </Card>
-        </div>
-      </div>
-    );
+  if (props.property.notInterested) {
+    return <div />;
   }
-);
+
+  return (
+    <div>
+      <div>
+        <Card className={props.classes.card}>
+          <CardMedia
+            className={props.classes.cover}
+            image={props.property.image}
+            title="Contemplative Reptile"
+          />
+          <div className={props.classes.details}>
+            <CardContent>
+              <Typography gutterBottom={true} variant="headline" component="h2">
+                {props.property.title} <FontAwesomeIcon icon={faPoundSign} />
+                {props.property.price.toLocaleString()}{" "}
+                <FontAwesomeIcon icon={faBed} /> {props.property.bed}{" "}
+                <FontAwesomeIcon icon={faMoneyBill} /> {props.property.roi}%
+              </Typography>
+              <Typography component="div">
+                {props.property.keywords.map((k, i) => (
+                  <Chip className={props.classes.keyword} key={i} label={k} />
+                ))}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                variant={props.property.saved ? "contained" : "flat"}
+                onClick={onSavedCliked}
+              >
+                {props.property.saved ? "Saved" : "Save"}
+              </Button>
+              <Button size="small" color="primary" onClick={onLinkClicked}>
+                Link
+              </Button>
+              <Button
+                size="small"
+                color="secondary"
+                onClick={onNotInterestedCliked}
+              >
+                Not interested
+              </Button>
+            </CardActions>
+          </div>
+        </Card>
+      </div>
+    </div>
+  );
+});
 
 // We explicitly export the name of the component
 // so it shows up in autocomplete when you import it
