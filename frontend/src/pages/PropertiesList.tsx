@@ -1,33 +1,36 @@
-// import { Property } from '../components/Property';
-
-import { Query } from "react-apollo";
 import * as React from "react";
+import { graphql, ChildDataProps } from "react-apollo";
 import query from "../queries/Property";
 import { Properties } from "api-types/Properties";
 import { Property } from "../components/Property";
 
-interface Variables {} // for future use
+interface InputProps {}
+interface Response extends Properties {}
+interface Variables {}
+interface ChildProps extends ChildDataProps<{}, Properties, {}> {}
 
-class PropertiesQuery extends Query<Properties, Variables> {}
+const withProperties = graphql<InputProps, Response, Variables, ChildProps>(
+  query,
+  {
+    name: "properties"
+  }
+);
 
-const PropertiesList = () => (
-  <PropertiesQuery query={query}>
-    {({ loading, error, data }) => {
-      if (error) {
-        return <div>Error</div>;
-      }
-      if (loading || !data || !data.properties) {
-        return <div>Loading</div>;
-      }
-      return (
-        <div>
-          {data.properties.map(
-            p => p && <Property property={p} actions={actions} />
-          )}
-        </div>
-      );
-    }}
-  </PropertiesQuery>
+const PropertiesList = withProperties(
+  ({ data: { loading, error, properties } }) => {
+    if (error) {
+      return <div>Error</div>;
+    }
+    if (loading) {
+      return <div>Loading</div>;
+    }
+    return (
+      <div>
+        {properties &&
+          properties.map(p => p && <Property property={p} actions={actions} />)}
+      </div>
+    );
+  }
 );
 
 const onSavedCliked = (id: string) => {

@@ -61,7 +61,7 @@ const Property = withStyles(styles)((props: PropretyProps) => {
           <div className={props.classes.details}>
             <CardContent>
               <Typography gutterBottom={true} variant="headline" component="h2">
-                {props.property.title} <FontAwesomeIcon icon={faPoundSign} />
+                {props.property.title} <FontAwesomeIcon icon={faPoundSign} />{" "}
                 {props.property.price.toLocaleString()}{" "}
                 <FontAwesomeIcon icon={faBed} /> {props.property.bed}{" "}
                 <FontAwesomeIcon icon={faMoneyBill} /> {props.property.roi}%

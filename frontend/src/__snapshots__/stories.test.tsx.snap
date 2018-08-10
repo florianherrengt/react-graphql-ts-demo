@@ -43,6 +43,7 @@ exports[`Storyshots Property with saved 1`] = `
                 style={Object {}}
               />
             </svg>
+             
             500,000
              
             <svg
@@ -259,6 +260,7 @@ exports[`Storyshots Property with title and price 1`] = `
                 style={Object {}}
               />
             </svg>
+             
             500,000
              
             <svg
