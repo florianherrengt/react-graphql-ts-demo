@@ -1,36 +1,24 @@
+import { PropertiesContainer } from "../containers/Properties";
+import { PropertiesList } from "../components/PropertiesList";
+import { Loading } from "../components/Loading";
+
 import * as React from "react";
-import { graphql, ChildDataProps } from "react-apollo";
-import query from "../queries/Property";
-import { Properties } from "api-types/Properties";
-import { Property } from "../components/Property";
 
-interface InputProps {}
-interface Response extends Properties {}
-interface Variables {}
-interface ChildProps extends ChildDataProps<{}, Properties, {}> {}
-
-const withProperties = graphql<InputProps, Response, Variables, ChildProps>(
-  query,
-  {
-    name: "properties"
-  }
-);
-
-const PropertiesList = withProperties(
-  ({ data: { loading, error, properties } }) => {
-    if (error) {
-      return <div>Error</div>;
-    }
-    if (loading) {
-      return <div>Loading</div>;
-    }
-    return (
+const PropertiesListPage = () => (
+  <PropertiesContainer>
+    {({ getAllProperties, updateProperty }) => (
       <div>
-        {properties &&
-          properties.map(p => p && <Property property={p} actions={actions} />)}
+        {getAllProperties.loading ? (
+          <Loading />
+        ) : (
+          <PropertiesList
+            properties={getAllProperties.data.properties}
+            actions={actions}
+          />
+        )}
       </div>
-    );
-  }
+    )}
+  </PropertiesContainer>
 );
 
 const onSavedCliked = (id: string) => {
@@ -47,4 +35,4 @@ const onLinkClicked = (link: string) => {
 
 const actions = { onSavedCliked, onLinkClicked, onNotInterestedCliked };
 
-export { PropertiesList };
+export { PropertiesListPage };

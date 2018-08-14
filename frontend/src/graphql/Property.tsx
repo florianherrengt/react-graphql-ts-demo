@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
 
-export default gql`
+export const getProperties = gql`
   query Properties {
     properties {
       id
@@ -13,6 +13,14 @@ export default gql`
       saved
       notInterested
       keywords
+    }
+  }
+`;
+
+export const updateProperty = gql`
+  mutation {
+    updateProperty(id: "2") {
+      id
     }
   }
 `;

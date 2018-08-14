@@ -15,11 +15,16 @@ const typeDefs = gql`
     notInterested: Boolean!
     keywords: [String!]!
   }
+  type Sirwan {
+    id: String!
+    title: String!
+  }
   type Query {
     properties: [Property]
+    developers: [Sirwan]
   }
   type Mutation {
-    saveProperty(id: String): Property
+    updateProperty(id: String): Property
   }
 `;
 
@@ -55,10 +60,11 @@ const dbProperties: Properties_properties[] = [
 // Provide resolver functions for your schema fields
 const resolvers = {
   Query: {
-    properties: (): Properties_properties[] => dbProperties
+    properties: (): Properties_properties[] => dbProperties,
+    developers: () => [{ id: "1", title: "Dev" }]
   },
   Mutation: {
-    saveProperty: (): Properties_properties => dbProperties[0]
+    updateProperty: (): Properties_properties => dbProperties[0]
   }
 };
 

@@ -24,6 +24,7 @@
     "esnext": "^3.3.1",
     "graphql": "^0.13.2",
     "react": "^16.4.2",
+    "react-adopt": "^0.6.0",
     "react-apollo": "^2.1.9",
     "react-dom": "^16.4.2",
     "react-scripts-ts": "2.16.0",
@@ -31,7 +32,7 @@
     "typeface-roboto": "^0.0.54"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
+    "start": "PORT=3001 react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
