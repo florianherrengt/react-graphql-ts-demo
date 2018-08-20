@@ -16,13 +16,13 @@ const getAllProperties = ({ render }: any) => (
   <Query query={apiCalls.getProperties}>{results => render(results)}</Query>
 );
 
-const updateProperty = ({ render }: any) => (
-  <Mutation mutation={apiCalls.updateProperty}>
+const saveProperty = ({ render }: any) => (
+  <Mutation mutation={apiCalls.saveProperty}>
     {mutation => render(mutation)}
   </Mutation>
 );
 
 export const PropertiesContainer = adopt<RenderProps, Props>({
   getAllProperties,
-  updateProperty
+  saveProperty
 });

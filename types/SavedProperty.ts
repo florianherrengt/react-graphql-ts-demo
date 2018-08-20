@@ -4,16 +4,20 @@
 // This file was automatically generated and should not be edited.
 
 // ====================================================
-// GraphQL query operation: Developers
+// GraphQL mutation operation: SavedProperty
 // ====================================================
 
-export interface Developers_developers {
+export interface SavedProperty_saveProperty {
   id: string;
-  title: string;
+  createdAt: any;
 }
 
-export interface Developers {
-  developers: (Developers_developers | null)[] | null;
+export interface SavedProperty {
+  saveProperty: SavedProperty_saveProperty | null;
+}
+
+export interface SavedPropertyVariables {
+  id: string;
 }
 
 /* tslint:disable */

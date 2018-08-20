@@ -17,10 +17,11 @@ export const getProperties = gql`
   }
 `;
 
-export const updateProperty = gql`
-  mutation {
-    updateProperty(id: "2") {
+export const saveProperty = gql`
+  mutation SavedProperty($id: String!) {
+    saveProperty(id: $id) {
       id
+      createdAt
     }
   }
 `;
