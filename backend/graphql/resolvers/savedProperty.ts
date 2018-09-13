@@ -1,5 +1,5 @@
-import { Context } from "../helpers";
-import controllers from "../controllers";
+import { Context } from "../../helpers";
+import controllers from "../../controllers";
 
 const saveProperty = (
   rootValue,
