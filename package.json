@@ -1,5 +1,5 @@
 {
-  "name": "estateinvestmentbot",
+  "name": "notwordpress",
   "version": "1.0.0",
   "description": "Work in progress... <!-- ## Project structure",
   "main": "index.js",
@@ -8,16 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/florianherrengt/react-graphql-ts-demo.git"
+    "url": "git+https://github.com/stampedeapp/not-wordpress.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/florianherrengt/react-graphql-ts-demo/issues"
+    "url": "https://github.com/stampedeapp/not-wordpress/issues"
   },
-  "homepage": "https://github.com/florianherrengt/react-graphql-ts-demo#readme",
-  "dependencies": {
-    "aws-amplify": "^1.0.6"
-  }
+  "homepage": "https://github.com/stampedeapp/not-wordpress#readme",
+  "dependencies": {}
 }

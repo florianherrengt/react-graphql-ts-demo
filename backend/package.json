@@ -1,5 +1,5 @@
 {
-  "name": "estateinvestmentbot_backend",
+  "name": "notwordpress",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "api-types": "../types",
     "apollo": "^1.4.0",
     "dynamodb-admin": "^2.0.6",
-    "serverless-offline": "^3.25.6",
+    "serverless-offline": "^3.25.12",
     "serverless-plugin-typescript": "^1.1.5"
   },
   "dependencies": {

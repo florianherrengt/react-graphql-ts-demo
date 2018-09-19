@@ -1,21 +1,8 @@
-service: estateinvestmentbot
+service: notwordpress
 
 provider:
   name: aws
   runtime: nodejs6.10
-  environment:
-    DYNAMODB_TABLE: ${self:service}-${opt:stage, self:provider.stage}
-  profile: estateinvestmentbot
-  iamRoleStatements:
-    - Effect: Allow
-      Action:
-        - dynamodb:Query
-        - dynamodb:Scan
-        - dynamodb:GetItem
-        - dynamodb:PutItem
-        - dynamodb:UpdateItem
-        - dynamodb:DeleteItem
-      Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}*"
 
 plugins:
   - serverless-plugin-typescript
@@ -27,20 +14,3 @@ functions:
     handler: server.handler
     events:
       - http: ANY /{any+}
-
-resources:
-  Resources:
-    UserDynamoDbTable:
-      Type: "AWS::DynamoDB::Table"
-      DeletionPolicy: Retain
-      Properties:
-        AttributeDefinitions:
-          - AttributeName: id
-            AttributeType: S
-        KeySchema:
-          - AttributeName: id
-            KeyType: HASH
-        ProvisionedThroughput:
-          ReadCapacityUnits: 1
-          WriteCapacityUnits: 1
-        TableName: "${self:provider.environment.DYNAMODB_TABLE}_user"
